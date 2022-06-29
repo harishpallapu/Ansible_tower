@@ -1,19 +1,19 @@
 ---
  - name:  provisioning EC2 instances using Ansible
-   hosts: all
+   hosts: localhost
    connection: local
    gather_facts: False
    tags: provisioning
 
    vars:
      keypair: ansible_tower
-     instance_type: t2.micro
-     image: ami-0851b76e8b1bce90b
+     instance_type: t2.small
+     image: ami-08df646e18b182346
      wait: yes
      group: webserver
      count: 1
      region: ap-south-1
-     security_group: my-jenkins-security-grp
+     security_group: testec2-security-grp
 
    tasks:
 
@@ -50,3 +50,12 @@
                       keypair={{ keypair }}
                       count={{count}}
        register: ec2
+     - name: Task # 3 Add Tagging to EC2 instance
+       local_action: ec2_tag resource={{ item.id }} region={{ region }} state=present
+       with_items: "{{ ec2.instances }}"
+       args:
+         tags:
+           Name: MyTargetEc2Instance
+                                                                     
+
+ 
