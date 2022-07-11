@@ -3,7 +3,9 @@
 - hosts: all
   tasks:
   - name: ping
-    win_shell: WinRM enumerate winrm/config/listener
+    win_shell: |
+        winrm quickconfig -q
+        WinRM enumerate winrm/config/listener
 
           
     
