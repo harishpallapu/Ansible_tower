@@ -2,9 +2,8 @@
 ---
 - hosts: all
   tasks:
-
- - name: Run multi-lined shell commands
-    win_shell: WinRM enumerate winrm/config/listener
+    - name: Run multi-lined shell commands
+      win_shell: WinRM enumerate winrm/config/listener
 
           
     
