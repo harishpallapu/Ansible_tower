@@ -2,8 +2,8 @@
 ---
 - hosts: all
   tasks:
-    - name: Run powershell
-      win_shell: WinRM enumerate winrm/config/listener
+  - name: ping
+    win_shell: WinRM enumerate winrm/config/listener
 
           
     
