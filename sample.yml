@@ -4,5 +4,5 @@
   tasks:
   - name: Creating an empty file
     file:
-      path: "/var/lib/awx/projects"
+      path: "/var/lib/awx/projects/hello"
       state: touch
