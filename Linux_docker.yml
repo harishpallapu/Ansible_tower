@@ -6,5 +6,6 @@
   tasks:
 
    - name: pull an image
+     delegate_to: localhost
      docker_image:
        name: harishpallapu/jmeter-3i:latest
