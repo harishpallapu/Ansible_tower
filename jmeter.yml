@@ -12,7 +12,8 @@
         name: jmeter
         image: harishpallapu/jmeter-3i:latest
         state: started
-     file:
+  - name: ansible create directory example
+    file:
        path: /jmeter/bin/project
        state: directory
        mode: '0755
