@@ -6,8 +6,7 @@
   tasks:
 
     - name: pull an image
-      docker_image:
-        name: harishpallapu/jmeter-3i:latest
+ 
       docker_container:
         name: jmeter
         image: harishpallapu/jmeter-3i:latest
