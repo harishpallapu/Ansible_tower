@@ -7,5 +7,5 @@
   
     - name: pull an image
       shell: |
-        docker start -it jmeter /bin/bash       
+        docker start jmeter       
         docker exec -it jmeter /bin/bash
