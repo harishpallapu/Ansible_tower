@@ -12,7 +12,7 @@
         name: jmeter
         image: harishpallapu/jmeter-3i:latest
         state: started
-     ansible.builtin.file:
+     file:
        path: /jmeter/bin/project
        state: directory
        mode: '0755
