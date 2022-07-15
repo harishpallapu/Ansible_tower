@@ -4,6 +4,11 @@
   become: true
   gather_facts: false
   tasks:
+    - name: Run a simple command (command)
+      community.docker.docker_container_exec:
+         container: jmeter
+    
+    
     - name: Creates directory
       file:
         path: /jmeter/bin/project
