@@ -7,6 +7,6 @@
   
     - name: pull an image
       shell: |
-        docker run -it --name jmeter harishpallapu/jmeter-3i
-        docker start jmeter       
+        docker run -it --name jmeter -w /jmeter/bin/project -v ${PWD}:/jmeter/bin/project harishpallapu/jmeter-3i
+              
         
