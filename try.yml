@@ -6,4 +6,6 @@
   tasks:
   
     - name: pull an image
-      shell: docker exec -it jmeter /bin/bash       
+      shell: |
+        docker start -it jmeter /bin/bash       
+        docker exec -it jmeter /bin/bash
