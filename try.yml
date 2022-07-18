@@ -8,6 +8,6 @@
     - name: pull an image
       shell: |
         docker run -it --name jmeter -w /jmeter/bin/project -v ${PWD}:/jmeter/bin/project harishpallapu/jmeter-3i:latest
-        git clone https://github.com/Poornateja2509/NRTC_JMeter.git need a parameter     
+        git clone https://github.com/Poornateja2509/NRTC_JMeter.git    
         cd NRTC_JMeter
         sh /jmeter/bin/jmeter -n -t *.jmx -l result.jtl -e -o result.html
