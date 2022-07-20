@@ -19,7 +19,7 @@
            recurse: yes
            state: directory
         git:
-           repo: 'https://{{gituser}}:{{gitpass}}@github.com/AKSarav/SampleNodeApp.git'
+           repo: https://github.com/Poornateja2509/NRTC_JMeter.git 
            dest: /jmeter/bin/project
         
 
