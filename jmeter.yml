@@ -11,8 +11,6 @@
         name: jmeter
         image: harishpallapu/jmeter-3i:latest
         state: started
-      shell: |
-        docker exec -it jmeter /bin/bash
       file:
         path: /jmeter/bin/project
         owner: root
