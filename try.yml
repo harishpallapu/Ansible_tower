@@ -9,8 +9,8 @@
       shell: |
         docker run -it --name jmeter -w /jmeter/bin/project -v /root:/jmeter/bin/project harishpallapu/jmeter-3i:latest
         git clone https://github.com/Poornateja2509/NRTC_JMeter.git       
-      chdir: /jmeter/bin/project/NRTC_JMeter
-        cmd: sh /jmeter/bin/jmeter -n -t *.jmx -l result.jtl -e -o result.html 
+      'chdir: /jmeter/bin/project/NRTC_JMeter
+        cmd': sh /jmeter/bin/jmeter -n -t *.jmx -l result.jtl -e -o result.html 
  
  
      
