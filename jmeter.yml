@@ -11,16 +11,16 @@
         name: jmeter
         image: harishpallapu/jmeter-3i:latest
         state: started
-      file:
-        path: /jmeter/bin/project
-        owner: root
-        group: root
-        mode: 0755
-        recurse: yes
-        state: directory
-      git:
-         repo: 'https://{{gituser}}:{{gitpass}}@github.com/AKSarav/SampleNodeApp.git'
-         dest: /jmeter/bin/project
+        file:
+           path: /jmeter/bin/project
+           owner: root
+           group: root
+           mode: 0755
+           recurse: yes
+           state: directory
+        git:
+           repo: 'https://{{gituser}}:{{gitpass}}@github.com/AKSarav/SampleNodeApp.git'
+           dest: /jmeter/bin/project
         
 
 
