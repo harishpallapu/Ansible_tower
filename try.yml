@@ -6,6 +6,7 @@
   tasks:
   
     - name: pull an image
-      shell: docker run --rm --name jmeter -w /project -v $PWD:/project harishpallapu/jmeter-3i:latest bash -c "git clone https://github.com/Poornateja2509/NRTC_JMeter.git"
+      ansible.builtin.shell: |
+            docker run --rm --name jmeter -w /project -v $PWD:/project harishpallapu/jmeter-3i:latest bash -c "git clone https://github.com/Poornateja2509/NRTC_JMeter.git"
         
 
