@@ -6,6 +6,6 @@
   tasks:
   
     - name: Copy a single file
-      ansible.windows.win_copy:
+      win_copy:
         src: /home/sample/NRTC_JMeter
         dest: C:\linux
