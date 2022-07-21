@@ -1,0 +1,11 @@
+---
+- name: copying result file
+  hosts: all
+  become: true
+  gather_facts: false
+  tasks:
+  
+    - name: Copy a single file
+      ansible.windows.win_copy:
+        src: /home/sample/NRTC_JMeter
+        dest: C:\linux
